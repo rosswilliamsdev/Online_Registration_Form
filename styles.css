@@ -1,5 +1,105 @@
 
 
+/* ----------DRY FORMATTING------------ */
+
+* {
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    letter-spacing: .05em;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    background: white;
+    text-align: center;
+}
+
+p {
+    color: #A4A9AE;
+    font-weight: 300;
+    font-size: .9em;
+}
+
+form {
+    background: white;
+    color: #2D3945;
+    border: none;
+}
+
+fieldset {
+    border: none;
+}
+
+input, select, textarea, label {
+    display: block;
+}
+
+hr {
+    margin: 3px 15px;
+}
+
+/* --------------HEADER--------------- */
+header h1 {
+    background: #2D3945;
+    color: white;
+    font-size: 1.1em;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+header p {
+    margin: 0 20px 25px 20px;
+}
+
+header h3 {
+    margin-bottom: 10px;
+}
+
+.thick-line {
+    margin-bottom: 0;
+    height: 4px;
+    background: #2D3945;
+}
+
+/* ----------------CONTACT INFO-------------- */
+
+.contact {
+    font-size: .75em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border: none;
+    background: #EFF0F1;
+    border-radius: 2px;
+}
+
+.contact input:focus {
+    border-color: #2D3945;
+}
+
+
+
+
+/* ----------------NEWSLETTER---------------- */
+
+.newsletter {
+    color: #A4A9AE;
+}
+
+.newsletter h3 {
+    color: #2D3945;
+}
+
+
 
 
 
@@ -7,5 +107,5 @@
 /* ------------MEDIA QUERIES------------- */
 
 @media screen and (min-width: 768px) {
-    
+
 }
