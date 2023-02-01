@@ -93,16 +93,26 @@ select {
     width: 22em;
     height: 3.5em;
     margin: 10px 0;
+    padding-right: 1.5em;
+
 }
 
+
 .contact input:focus {
-    border-color: #2D3945;
+    border: 2px solid #2D3945;
+    outline-color: #2D3945;
 }
 
 input[type="text"]:last-of-type {
     width: 11em;
 }
 
+input::placeholder {
+    text-align: right; 
+    font-style: italic;
+    opacity: .25;
+    font-size: .9em;
+}
 
 
 /* ----------------NEWSLETTER---------------- */
