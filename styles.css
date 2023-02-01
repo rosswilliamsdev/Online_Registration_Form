@@ -41,6 +41,7 @@ fieldset {
 
 input, select, textarea, label {
     display: block;
+    font-weight: 300;
 }
 
 hr {
@@ -102,8 +103,8 @@ select {
 }
 
 select:first-child {
+    color: #A4A9AE;
     opacity: .25;
-   
 }
 
 .contact input:focus {
@@ -133,9 +134,28 @@ input::placeholder {
     color: #2D3945;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+}
 
+button {
+    width: 90%;
+    margin: 1em;
+    color: white;
+    height: 3.5em;
+    border: none;
+    border-radius: 5px;
+    background: #4EBBB5;
+    font-size: 1.1em;
+}
 
+/* --------------FOOTER-------------------- */
 
+footer {
+    text-align: center;
+    opacity: .75;
+}
 
 
 /* ------------MEDIA QUERIES------------- */
