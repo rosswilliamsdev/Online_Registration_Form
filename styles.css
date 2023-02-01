@@ -97,6 +97,14 @@ select {
 
 }
 
+select {
+    padding-left: 1.5em;
+}
+
+select:first-child {
+    opacity: .25;
+   
+}
 
 .contact input:focus {
     border: 2px solid #2D3945;
