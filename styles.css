@@ -167,14 +167,24 @@ button {
     border-radius: 5px;
     background: #4EBBB5;
     font-size: 1.1em;
+    transition: transform 1s;
+}
+
+button:hover {
+    transform: rotate(3deg);
 }
 
 /* --------------FOOTER-------------------- */
 
 footer {
     text-align: center;
-    opacity: .75;
     margin-bottom: 200px;
+    background: #2D3945;
+    color: white;
+}
+
+footer p {
+    color: white;
 }
 
 
@@ -202,6 +212,12 @@ form {
 
 .newsletter-hr {
     width: 100%;
+    margin: auto;
+}
+
+.div-lines {
+    width: 41.25%;
+    margin: auto;
 }
 
 label {
