@@ -52,6 +52,7 @@ hr {
     margin: 1.25em 0;
 }
 
+
 /* --------------HEADER--------------- */
 header h1 {
     background: #2D3945;
@@ -110,12 +111,16 @@ option:first-child {
     opacity: .25;
 }
 
-.contact input:focus {
-    border: 2px solid #2D3945;
-    outline-color: #2D3945;
+.contact input, textarea, select {
+    transition: background-color 1s;
 }
 
-.zipcode {
+.contact input:focus, textarea:focus, select:focus {
+    background-color:#2D3945;
+    color: white;
+}
+
+.zip-div {
     width: 50%;
 }
 
@@ -167,18 +172,18 @@ button {
     border-radius: 5px;
     background: #4EBBB5;
     font-size: 1.1em;
-    transition: transform 1s;
+    transition: background-color 1s;
 }
 
-button:hover {
-    transform: rotate(3deg);
+button:focus {
+    background-color: #2D3945;
 }
 
 /* --------------FOOTER-------------------- */
 
 footer {
     text-align: center;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
     background: #2D3945;
     color: white;
 }
@@ -202,8 +207,12 @@ form {
     display: flex;
 }
 
+.zip-div {
+    width:auto;
+}
+
 #zipcode {
-    width: 30%;
+    width: 25%;
 }
 
 .zipcode-label {
